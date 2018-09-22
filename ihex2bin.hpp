@@ -1,7 +1,7 @@
 #ifndef __INCLUDE_IHEX2BIN_H
 #define __INCLUDE_IHEX2BIN_H
 
-//#include <nuttx/config.h>
+#include <nuttx/config.h>
 #include <sys/types.h>
 #include <stdint.h>
 #include <stdio.h>
@@ -31,11 +31,13 @@ class Hex2Bin{
             start_linear_address = 0x00000000;
             base_addr = 0x00000000;
             end_addr = 0x00000000;
+            hexfile = NULL;
         }
         Hex2Bin()
         {
             base_addr = 0x00000000;
             end_addr = 0x00000000;
+            hexfile = NULL;
 		}
 
         /*~Hex2Bin()
