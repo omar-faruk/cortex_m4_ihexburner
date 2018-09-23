@@ -115,11 +115,11 @@ int Hex2Bin::ParseRecord(uint8_t *buffer, uint32_t *addr)
         //print(hex_buff,rsize);
         //printf("\n");
         memcpy(ihex_packet.input,hex_buff,rsize-1);
-        printf("packet type:%x\n",ihex_packet.record_type);
+        //printf("packet type:%x\n",ihex_packet.record_type);
         if(ihex_packet.record_type == 0x00)
         {
             //print(ihex_packet.data,ihex_packet.byte_count);
-            printf("byte count: %x\n",ihex_packet.byte_count);
+            //printf("byte count: %d\n",ihex_packet.byte_count);
             memcpy(buffer,ihex_packet.data,ihex_packet.byte_count);
            //*addr = ihex_packet.address;
            ret = ihex_packet.byte_count;
