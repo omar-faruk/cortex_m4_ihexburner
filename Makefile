@@ -8,7 +8,7 @@ all: ihex
 	g++ test.cpp *.o -o test 
 
 ihex:
-	g++ -c ihex2bin.cxx	-fpack-struct
+	g++ -c ihex2bin.cxx	-fpack-struct -std=c++11
 
 clean:
 	rm -rf *.o

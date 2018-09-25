@@ -1,7 +1,7 @@
 #ifndef __INCLUDE_IHEX2BIN_H
 #define __INCLUDE_IHEX2BIN_H
 
-#include <nuttx/config.h>
+//#include <nuttx/config.h>
 #include <sys/types.h>
 #include <stdint.h>
 #include <stdio.h>

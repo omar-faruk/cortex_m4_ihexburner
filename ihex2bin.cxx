@@ -1,11 +1,10 @@
-#include <nuttx/config.h>
+//#include <nuttx/config.h>
 #include <sys/types.h>
 #include <stdint.h>
-#include <stdio.h>
+#include <cstdio>
 #include <string.h>
 #include <ctype.h>
 #include <stdlib.h>
-#include <netinet/in.h>
 #include "ihex2bin.hpp"
 
 
